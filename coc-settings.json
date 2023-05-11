@@ -1,0 +1,50 @@
+{
+  "colors.enable": true,
+  "languageserver": {
+    "go": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "trace.server": "verbose",
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "eslint": {
+          "enable": true,
+          "options": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx", ".vue", ".c"],
+            "configFile": "./.eslintrc.js"
+          }
+        }
+      }
+    }
+  },
+  "eslint.probe": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "c"
+  ],
+  "eslint.enable": false,
+  "eslint.autoFixOnSave": true,
+  "eslint.format.enable": true,
+  "eslint.run": "onSave",
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".ts", ".tsx", ".vue", ".c"],
+    "configFile": "./.eslintrc.js"
+  },
+  "[javascript]": { "coc.preferences.formatOnSave": true },
+  "[typescript]": { "coc.preferences.formatOnSave": true },
+  "[css]": { "coc.preferences.formatOnSave": true },
+  "[json]": { "coc.preferences.formatOnSave": true },
+  "[markdown]": { "coc.preferences.formatOnSave": true },
+  "[html]": { "coc.preferences.formatOnSave": true },
+  "[vue]": { "coc.preferences.formatOnSave": true },
+  "[yaml]": { "coc.preferences.formatOnSave": true },
+  "[c]": { "coc.preferences.formatOnSave": true },
+  "[cpp]": { "coc.preferences.formatOnSave": true },
+  "[java]": { "coc.preferences.formatOnSave": true }
+}
+
